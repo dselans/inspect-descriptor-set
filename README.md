@@ -29,7 +29,7 @@ test.fds was generated via `protoc` against github.com/batchcorp/plumber-schemas
 running the following cmd:
 
 ```bash
-	docker run --rm -w $(PWD) -v $(PWD):$(PWD) -w${PWD} jaegertracing/protobuf:0.2.0 \
+docker run --rm -w $(PWD) -v $(PWD):$(PWD) -w${PWD} jaegertracing/protobuf:0.2.0 \
 	--proto_path=./protos \
 	--proto_path=./protos/args \
 	--proto_path=./protos/common \

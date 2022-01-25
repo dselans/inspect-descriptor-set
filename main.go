@@ -24,12 +24,12 @@ func init() {
 func main() {
 	if *helpFlag {
 		printUsage()
-		flag.PrintDefaults()
+		//flag.PrintDefaults()
 		os.Exit(0)
 	}
 
 	if *fileFlag == "" {
-		fmt.Println("No file specified")
+		printUsage()
 		os.Exit(1)
 	}
 
@@ -90,5 +90,5 @@ func main() {
 }
 
 func printUsage() {
-	fmt.Println("Usage: ./inspect file [-v | -h]")
+	fmt.Println("Usage: ./inspect -f file [-v | -h]")
 }
